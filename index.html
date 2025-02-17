@@ -83,7 +83,7 @@ implications of such changes.
       <div class="row p-4 pb-0 pe-lg-0 pt-lg-5 align-items-center rounded-3 border shadow-lg">
         <div class="p-3 p-lg-5 pt-lg-3">
           <p class="lead">
-            The mean number of references included in CHI articles has increased since 2016. This growth was enabled by a decision to no longer include the reference section in the overall page count. Since 2016, the CHI community has clearly entered a novel trajectory, with a year-by-year growth of the mean number of references included in CHI articles.
+            The mean number of references included in CHI articles has increased since 2016. This growth was enabled by a decision to lift page restrictions on the reference section. Since 2016, the CHI community has entered a novel trajectory, characterized by a year-by-year growth in the mean number of references included in CHI articles. The reference section in CHI articles is growing by 6.45 references/year.
           </p>
           <p class="lead">
 
@@ -116,12 +116,16 @@ implications of such changes.
       <div class="row p-4 pb-0 pe-lg-0 pt-lg-5 align-items-center rounded-3 border shadow-lg">
         <div class="p-3 p-lg-5 pt-lg-3">
           <p class="lead">
+            It is remarkable how linear the increase in the mean number of references has been since 2016. We can fit a simple linear regression model to this time series. 98% of the variance are explained with this model.
+          </p>
+          <p class="lead">
+            <img src="figures/fig4.jpg" alt="" style="max-width: 100%" />
+          </p>
+          <p class="lead">
             If the trend continues undisrupted, an article will include <i>on average</i> 130 references at CHI 2030.
           </p>
           <p class="lead">
-
-            <img src="figures/fig4.jpg" alt="" style="max-width: 100%" />
-
+            <img src="figures/extrapolation.jpg" alt="" style="max-width: 100%" />
           </p>
         </div>
       </div>
@@ -166,9 +170,7 @@ implications of such changes.
       <div class="row p-4 pb-0 pe-lg-0 pt-lg-5 align-items-center rounded-3 border shadow-lg">
         <div class="p-3 p-lg-5 pt-lg-3">
           <p class="lead">
-            Additional changes in citation practices are noteworthy. For instance, the mean number of authors in CHI articles has increased,  from an average of 1.85 authors per CHI article in 1981 to an
-average of 5.17 authors per article in 2024.
-However, this increase in authors is not proportional to the increase in the mean number of references.
+            Additional changes in citation practices are noteworthy. For instance, the mean number of authors in CHI articles has increased,  from an average of 1.85 authors per CHI article in 1981 to an average of 5.17 authors per article in 2024. However, this increase in authors is not proportional to the increase in the mean number of references.
           </p>
           <p class="lead" style="text-align:center">
 
@@ -184,8 +186,7 @@ However, this increase in authors is not proportional to the increase in the mea
       <div class="row p-4 pb-0 pe-lg-0 pt-lg-5 align-items-center rounded-3 border shadow-lg">
         <div class="p-3 p-lg-5 pt-lg-3">
           <p class="lead">
-            Enabled by the decision to no longer restrict references, literature reviews have become much more common at CHI.
-            Especially systematic literature reviews, which before 2015 did not exist at CHI, have seen an increase (spurred also by the COVID-19 pandemic).
+            Enabled by the decision to no longer restrict references, <strong>literature reviews</strong> have become much more common at CHI. Especially systematic literature reviews, which before 2015 did not exist at CHI, have seen an increase (spurred also by the COVID-19 pandemic).
           </p>
           <p class="lead" style="text-align:center">
 
@@ -202,15 +203,16 @@ However, this increase in authors is not proportional to the increase in the mea
       <div class="row p-4 pb-0 pe-lg-0 pt-lg-5 align-items-center rounded-3 border shadow-lg">
         <div class="p-3 p-lg-5 pt-lg-3">
           <p class="lead">
-            Citations to ArXiv have become more acceptable in the CHI commmunity.
+            <strong>Citations to ArXiv</strong> have become more acceptable in the CHI commmunity.
             This, of course, is also due to an influence of other fields, such as machine learning, where it is common to upload a pre-print before formal review.
             My analysis of references at CHI shows that over one third of the articles published at CHI'24 contain at least two citations to arXiv.
             ArXiv pre-print citations come with their own set of challenges, such as authors citing the pre-print even though an article has formally been accepted at a journal or conference.
           </p>
           <p class="lead" style="text-align:center">
-
+            <img src="figures/arxiv.jpg" alt="" style="max-width: 100%" />
+          </p>
+          <p class="lead" style="text-align:center">
             <img src="figures/fig9.jpg" alt="" style="max-width: 100%" />
-
           </p>
         </div>
       </div>
@@ -220,12 +222,56 @@ However, this increase in authors is not proportional to the increase in the mea
   <div class="container my-5">
       <div class="row p-4 pb-0 pe-lg-0 pt-lg-5 align-items-center rounded-3 border shadow-lg">
         <div class="p-3 p-lg-5 pt-lg-3">
+          <p class="lead">
+            The same trend can be observed with (formal) <strong>citations to code &amp; data repositories</strong>, such as GitHub, Huggingface, Zenodo, Kaggle, and osf.io.
+          </p>
+          <p class="lead" style="text-align:center">
+            <img src="figures/repos.jpg" alt="" style="max-width: 100%" />
+          </p>
+        </div>
+      </div>
+  </div>
+
+
+  <div class="container my-5">
+      <div class="row p-4 pb-0 pe-lg-0 pt-lg-5 align-items-center rounded-3 border shadow-lg">
+        <div class="p-3 p-lg-5 pt-lg-3">
+          <p class="lead">
+            Citations from CHI articles to <strong>potential predatory journals and questionable publishers</strong> have skyrocketed since 2016.
+          </p>
+          <p class="lead" style="text-align:center">
+            <img src="figures/predators.jpg" alt="" style="max-width: 100%" />
+          </p>
+          <p class="lead">
+            80% percent of these citations point to <strong>Frontiers Media</strong>.
+            Clearly, the CHI community has fully embraced this publisher.
+          </p>
+          <p class="lead" style="text-align:center">
+            <img src="figures/frontiers.jpg" alt="" style="max-width: 100%" />
+          </p>
+          <p class="lead">
+            The other 20% are <strong>one-off citations</strong>, here and there, to potential predatory journals and questionable publishers.
+            The number of these citations has, in relative terms, remained stable and limited in the recent decade.
+          </p>
+          <p class="lead" style="text-align:center">
+            <img src="figures/other-predators.jpg" alt="" style="max-width: 100%" />
+          </p>
+        </div>
+      </div>
+  </div>
+
+
+
+
+  <div class="container my-5">
+      <div class="row p-4 pb-0 pe-lg-0 pt-lg-5 align-items-center rounded-3 border shadow-lg">
+        <div class="p-3 p-lg-5 pt-lg-3">
           <h1 class="headline display-6 fw-bold lh-1">Implications</h1>
           <p class="lead">
 
-The above expansive path of the CHI community is problematic, for several reasons.
+The above expansive path of the CHI community is problematic, for several reasons:
 
-<ul>
+<ul class="lead">
   <li>
 First, I argue that 130 references per article is too many to thoroughly screen during the
 peer review process. A high number of references increases the cognitive load on peer reviewers,
@@ -290,7 +336,7 @@ meso-level policy decisions can be profound. This study highlights the value of 
 for HCI and the CHI community. More meta-research is needed to carefully consider the broader
 impact of policy decisions and to provide clear recommendations for stakeholders. It is time for the
 HCI community to pause and reflect on its citation practices, and constructively discuss solutions.
-A different pathway forward is needed to make CHI sustainable again.
+A different pathway forward is urgently needed.
 
         </p>
         </div>
@@ -309,8 +355,8 @@ A different pathway forward is needed to make CHI sustainable again.
 @inproceedings{oppenlaender2024past,<br />
 &nbsp;&nbsp;&nbsp;      title={Past, Present, and Future of Citation Practices in HCI}, <br />
 &nbsp;&nbsp;&nbsp;      author={Jonas Oppenlaender},<br />
-&nbsp;&nbsp;&nbsp;      year={2024},<br />
 &nbsp;&nbsp;&nbsp;      booktitle = {Proceedings of the 2025 CHI Conference on Human Factors in Computing Systems},<br />
+&nbsp;&nbsp;&nbsp;      year={2025},<br />
 &nbsp;&nbsp;&nbsp;      publisher = {ACM},<br />
 &nbsp;&nbsp;&nbsp;      address = {New York, NY, USA},<br />
 &nbsp;&nbsp;&nbsp;      eprint={2405.16526},<br />
